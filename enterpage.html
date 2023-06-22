@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Writings By Mars</title>
+    <link rel="stylesheet" href="css/style0.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+<link rel="manifest" href="./favicon_io/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+
+<header class="header">
+  <div class="overlay">
+    <h1 class="header-title"> Writings by Mars </h1>
+  </div>
+</header>
+
+<body class="page">
+  <div class="intro">
+    <h2 class="greetings">
+    Greetings and Salutations! </h2>
+    
+<p class="intro-text">
+      I go by the name Mars and I welcome you to my poetry page
+    </p>
+<p class="intro-text">
+      To gain access to my site you must enter the password <3
+    </p>
+  <br>
+  <br>
+  <br>
+<body>
+ <!-- <h3 class="terms"> 
+    I eventually plan on publishing and doing some stuff with my poetry and I would really rather not run into any issues. Thanks!
+    <br>
+    Do not:
+    <li> Share my poetry or the password without permission.
+    <li> Steal, use, or copy any part of my poetry.
+    <li> Post my poetry, the contents of this site, or the password, without permission
+    <li> Use any part of my poetry for anything in general.
+    -->
+  <h2 class="intro-text"> Please enter the password </h2>
+      <center>
+         <input type="password" id="tutorial">
+         <br>
+         <br>
+         <button onclick="protectpasscode()">Enter</button>
+         <script>
+            function protectpasscode() {
+               const result = document.getElementById("tutorial").value;
+               let passcode = "planetary";
+               let space = '';
+               if (result == space) {
+                  alert("Nothing Happens...")
+               } else {
+                  if (result == passcode) { window.location="./mainpage.html"
+                     ;
+                  } else {
+                     alert("Incorrect...");
+                     location.reload();
+                  }
+               }
+            }
+         </script>
+      </center>
+   </body>
+ </div>
+</html>
