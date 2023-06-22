@@ -1,0 +1,350 @@
+/*
+    Stylesheet by Rudolf Winestock
+    Copyright © 2011-present
+    All Rights Reserved
+    contact: rudolf@winestockwebdesign.com
+*/
+
+/*
+    I'm flattered that you're taking the time to read my code.  I reserve copyright in order to cover my bases, but feel free to learn from it.  Reading other peoples code was part of the way that I learned.  The Readability addon (http://www.readability.com/) gives much of the inspiration for the design of my essays.  Since so many people use it to make websites bearable, I figured that I would cut out the middle man.
+*/
+
+
+.ssimg{
+    margin-top: -4px;
+}
+.ssimg1 {
+    width: 45%;
+    object-position: center;
+    display: block;
+    margin: 20px auto;
+    font-size: 0;
+}
+
+.ssimg1 {
+    position: relative;
+  background: #fff;
+  
+  margin: 100px auto;
+  box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2);
+ 
+}
+.ssimg1:after, .ssimg:before{
+  content: '';
+  position: absolute;
+  left: auto;
+  background:none;
+  z-index: -1;
+}
+.ssimg1:after{
+  width: 90%;
+  height: 10px;
+  top: 30px;
+  right:8px;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-box-shadow: 0px -20px 36px 5px #295d92;
+  -moz-box-shadow: 0px -20px 36px 5px #295d92;
+  box-shadow: 0px -25px 35px 0px rgba(0,0,0,0.5);
+}
+
+.ssimg1:before{
+  width: 10px;
+  height: 95%;
+  top: 5px;
+  right:18px;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  -webkit-box-shadow: 20px 0px 25px 5px #295d92;
+  -moz-box-shadow: 20px 0px 25px 5px #295d92;
+  box-shadow: 22px 0px 35px 0px rgba(0,0,0,0.5);
+}
+
+.titlebox{
+    border-top: #8f7ba6 10px ridge;
+    border-bottom: #8f7ba6 10px ridge;
+}
+
+.title{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.right{
+    text-align: right;
+}
+/*
+    The background image which I use for my essays is called Rice paper.  https://subtlepatterns.com/rice-paper/
+    It is free to use thanks to Atle Mo.  http://atlemo.com/
+  His site has many other free background images.
+*/
+
+h1
+{
+    text-align: center;
+    font-variant: small-caps;
+    font-style: italic;
+    font-size: 3.5em;
+}
+
+h3
+{
+    text-align: center;
+    font-variant: small-caps;
+    line-height: .5em;
+}
+
+#menu
+{
+    /*Make a box with rounded corners.*/
+    border-radius: 15px; /*Give the box a light shadow.*/
+    box-shadow: 0px 0px 1px #000000; /*The width of the box must be a bit larger than the width of the paragraph.*/
+    position: fixed;
+}
+
+#menu ul
+{
+    margin: 0.5em;
+    padding: 0.5em;
+    list-style-type: none;
+    font-size: x-large;
+}
+
+#menu ul li
+{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#menu ul li a
+{
+    text-decoration: none;
+    color: #5C832F;
+}
+
+#menu ul li a:hover
+{
+    color: #284907;
+}
+
+#intro
+{
+    padding-bottom: 1em;
+}
+
+#intro p
+{
+    font-size: large;
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+blockquote
+{
+    background-color: #FFF7FE;
+}
+
+blockquote p
+{
+    width: 21em;
+    text-indent: 0em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*
+    The "main" div and the <p> selectors took a lot of fiddling and are where most of the action occurs.  Ease of readability is paramount.
+*/
+
+#main
+{
+    /*Make a box with rounded corners.*/
+    border-radius: 15px; /*Give the box a light shadow.*/
+    box-shadow: 0px 0px 10px #000000; /*The width of the box must be a bit larger than the width of the paragraph.*/
+    width: 48.5em; /*The width setting, along with these margin settings, put the box in the center with the sides hugging the text.*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 1em; /*Contrast is greater than outside the essay in order to focus the readers' attention.*/
+    background-color: #F0F8FF;
+    color: #382513;
+}
+
+#main hr
+{
+    width: 25%;
+}
+
+p
+{
+    /*Short lines mean that the eyes don't travel far in order to read.*/
+    width: 45em; /*There's very little padding so that the box hugs the paragraphs.  The lines of the box guide the eyes downward.*/
+    padding-top: 0.12em;
+    padding-bottom: 0.12em; /*Jagged right edges are unsightly, so I justify paragraphs.  Lines are short, so readability is unaffected.
+    text-align: justify; I try to imitate printed copy with the justified and indented paragraphs.
+    text-indent: 4em;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px; /*Between the short lines and the large letters, I'm trying to entice readers to go on.  "Just another line.  It's not much."*/
+    font-size: 20px;
+}
+
+/*
+    The extro tells how the essay was received, who linked to it, and any discussion on it.  I write the extro some time after publishing the essay.
+*/
+
+#extro
+{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#extro p
+{
+    font-size: large;
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+#footer p
+{
+    padding: none;
+    font-size: smaller;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+/* Back top */
+.go-top {
+  background-color: #ffffff;
+  box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+  transition : all 1s ease;
+  bottom: 2em;
+  right: 2em;
+  color: #333;
+  font-size: 24px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.go-top:hover {
+    background: #8f7ba6;
+    color: #ffffff;
+}
+
+
+
+/*---------------------------------------
+   Social icon             
+-----------------------------------------*/
+
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    border: 2px solid #292929;
+    color: #292929;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 22px 12px 10px 12px;
+}
+
+.social-icon li a:hover {
+    border-color: #8f7ba6;
+    color: #8f7ba6;
+    transform: scale(1.1);
+}
+
+
+
+/*---------------------------------------
+   Mobile Responsive         
+-----------------------------------------*/
+
+@media (max-width: 980px) {
+
+  .main-about,
+  .main-single-post,  
+  .main-gallery,
+  .main-contact {
+    height: 35vh;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  #about .col-md-6 img {
+    padding-left: 0px;
+  }
+
+  #blog-single-post .blog-single-post-image img {
+    padding-bottom: 22px;
+  }
+
+  footer-container .footer-container .col-md-4 {
+    padding-top: 22px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  h1 {
+    font-size: 42px;
+  }
+
+  #about, #gallery,
+  #contact,
+  #blog, #blog-single-post {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+}

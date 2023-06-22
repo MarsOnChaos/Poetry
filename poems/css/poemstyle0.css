@@ -10,12 +10,13 @@ p {
 * {
   box-sizing: border-box;
 }
-body
+body{
   background-color: #757074;
 }
+
 .page {
   font-family: 'Shadows Into Light', cursive;
-  background: #757074;
+  background-color: #757074;
 
 }
 
@@ -26,8 +27,8 @@ body
   background-position: center center;
   text-align: center;
   margin: -4px;
-  border-top: #8f7ba6 10px ridge;
-    border-bottom: #8f7ba6 10px ridge;
+  background-color: #757074;
+  
 }
 
 .header-title{
@@ -37,7 +38,8 @@ body
   color: white;
   max-width: 1240px;
   margin: auto; ;
-
+border-top: #8f7ba6 10px ridge;
+  border-bottom: #8f7ba6 10px ridge;
 }
 
 .overlay {
