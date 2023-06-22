@@ -10,8 +10,9 @@ p {
 * {
   box-sizing: border-box;
 }
-body
+body{
   background-color: #757074;
+}
 }
 .page {
   font-family: 'Shadows Into Light', cursive;
@@ -26,8 +27,6 @@ body
   background-position: center center;
   text-align: center;
   margin: -4px;
-  border-top: #8f7ba6 10px ridge;
-    border-bottom: #8f7ba6 10px ridge;
 }
 
 .header-title{
